@@ -1,4 +1,4 @@
-# 🐾 PET_SAUDE
+#  PET_SAUDE
 
 Aplicação completa para gestão de saúde e atendimento pet, desenvolvida com arquitetura moderna containerizada usando **Docker Compose**, **NestJS** (Backend), **Next.js** (Frontend), **PostgreSQL** (Banco de Dados) e **Nginx** (Proxy Reverso).
 
