@@ -21,7 +21,7 @@ export default function LoginPage() {
     setErrorMsg("");
     console.log(process.env.NEXT_PUBLIC_BACKEND_URL);
     try {
-      const response = await fetch('/api/auth/login', {
+      const response = await fetch( `${process.env.NEXT_PUBLIC_BACKEND_URL}/auth/login`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),
