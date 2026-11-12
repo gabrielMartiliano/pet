@@ -78,7 +78,7 @@ export default function LoginPage() {
               htmlFor="email" 
               className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1.5"
             >
-              E-mail corporativo
+              E-mail corporativo 
             </label>
             <input
               id="email"

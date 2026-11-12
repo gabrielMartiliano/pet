@@ -1,13 +1,17 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  async rewrites() {
-    return [
-     
-      {
-        source: '/api/:path*',
-        destination: `http://localhost:3000/auth/:path*`, // Encaminha chamadas /api para o NestJS
-      },
-    ];
+
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  webpack: (config, { dev }) => {
+    if (dev) {
+      config.watchOptions = {
+        ...config.watchOptions,
+        poll: 1000,
+        aggregateTimeout: 300,
+      };
+    }
+
+    return config;
   },
 };
 
